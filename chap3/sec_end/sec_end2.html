@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>変数</title>
+</head>
+
+<body>
+    <script>
+        const TAX_RATE = 1.1;
+        let productionPrice = 1000;
+
+        // 加算演算子を使った場合
+        console.log("商品の金額は" + productionPrice + "ですので、税込金額は" + productionPrice * TAX_RATE + "です。");
+
+        // テンプレートリテラルを使った場合
+        console.log(`商品の金額は${productionPrice}ですので、税込金額は${productionPrice * TAX_RATE}です。`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number型とBigInt型</title>
+</head>
+
+<body>
+    <script>
+        // Number型では正常処理の範囲外のため、誤った値が表示される
+        console.log(2 ** 53 + 1);
+
+        // BigInt型であれば正しい値を表示できる
+        console.log(2n ** 53n + 1n);
+    </script>
+</body>
+
+</html>
