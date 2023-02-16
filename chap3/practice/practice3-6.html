@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習問題 3.6</title>
+</head>
+
+<body>
+    <script>
+        // 1
+        let obj = {
+            prop: true,
+            subObj: { val: 100 },
+            greeting() { console.log("こんにちは"); }
+        };
+        console.log(obj.prop);
+        console.log(obj.subObj.val);
+        obj.greeting();
+
+        // 2
+        console.log(obj["prop"]);
+        console.log(obj["subObj"]["val"]);
+        obj["greeting"]();
+
+        // 3
+        obj.subObj.val2 = 1000;
+        console.log(obj.subObj.val2);
+    </script>
+</body>
+
+</html>
