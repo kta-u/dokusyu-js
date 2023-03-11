@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Null合体演算子の使い方</title>
+</head>
+
+<body>
+    <script>
+        // 変数にnullを格納
+        let val = null;
+
+        // 右辺のvalはnullのため"初期値"がセットされる
+        val = val ?? "初期値";
+        console.log(`val [${val}]`);
+
+        // null, undefined以外は左のオペランドを返す
+        let num = 0;
+        num = num ?? 10;
+        console.log(`val [${num}]`);
+    </script>
+</body>
+
+</html>
