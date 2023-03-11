@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オブジェクトが多階層の場合</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            name: "独習 太郎",
+            age: 28,
+            parents: {
+                mother: "Sara",
+                father: "John"
+            }
+        };
+
+        console.log(person.siblings);
+        console.log(person.siblings?.length);
+        console.log(person.siblings.length);
+    </script>
+</body>
+
+</html>
