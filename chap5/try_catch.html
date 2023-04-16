@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>try/catch/finally構文の例</title>
+  </head>
+  <body>
+    <script>
+      try {
+        nonExistingFunction();
+        console.log(
+          "This is not executed by exception of nonExistingFunction."
+        );
+      } catch (error) {
+        console.error(
+          "Exception occurs because nonExistingFunction doesn't exist."
+        );
+        console.error("Error type: " + error.name);
+        console.error("Error message: " + error.message);
+      } finally {
+        console.log(
+          "When you need the description of post-processing, you describe here."
+        );
+      }
+
+      console.log(
+        "Subsequent code will be executed even if an exception occurs."
+      );
+    </script>
+  </body>
+</html>

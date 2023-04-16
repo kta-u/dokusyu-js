@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>練習問題 5.5</title>
+  </head>
+  <body>
+    <script>
+      try {
+        let greeting = 2;
+        if (typeof greeting !== "string") {
+          throw "不正なデータ型です。";
+        }
+        console.log(`${greeting}、いい天気ですね。`);
+      } catch (error) {
+        console.log(error);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>練習問題 5.11</title>
+  </head>
+  <body>
+    <script>
+      const arry = [10, "文字列", 20, true, 23, 47];
+      let sum = 0;
+      for (const val of arry) {
+        if (typeof val === "number") {
+          sum += val;
+        }
+      }
+      console.log(sum);
+    </script>
+  </body>
+</html>

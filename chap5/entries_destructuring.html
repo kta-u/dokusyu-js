@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>分割代入を使って省略記法</title>
+  </head>
+  <body>
+    <script>
+      obj = { apple: "りんご", banana: "バナナ" };
+      for (const [key, value] of Object.entries(obj)) {
+        console.log(key, value);
+      }
+    </script>
+  </body>
+</html>
