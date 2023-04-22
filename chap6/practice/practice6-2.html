@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>練習問題 6.2</title>
+  </head>
+  <body>
+    <script>
+      // 関数宣言
+      function noArgumentFunc() {
+        console.log("引数がない関数です");
+      }
+
+      function multiply(val1, val2) {
+        console.log(val1 * val2);
+      }
+
+      function twoArgumentFunc(arg1, arg2) {
+        console.log("arg1:", arg1);
+        console.log("arg2:", arg2);
+      }
+
+      // [1]の確認
+      noArgumentFunc();
+
+      // [2]の確認
+      multiply(2, 3);
+      multiply(15, 2, 10);
+
+      // [3]の確認
+      twoArgumentFunc();
+      twoArgumentFunc(1);
+      twoArgumentFunc(1, 2);
+    </script>
+  </body>
+</html>

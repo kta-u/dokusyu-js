@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>引数は関数内でのみ有効な識別子</title>
+  </head>
+  <body>
+    <script>
+      let externalVal = 3;
+
+      // 関数宣言
+      function add5(internalVal) {
+        return internalVal + 5;
+      }
+
+      const result = add5(externalVal);
+      console.log(result);
+
+      console.log(internalVal);
+    </script>
+  </body>
+</html>

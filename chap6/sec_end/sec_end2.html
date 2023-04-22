@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>戻り値</title>
+  </head>
+  <body>
+    <script>
+      function hello() {
+        console.log("こんにちは");
+      }
+      const returnVal1 = hello();
+
+      const double = function (num) {
+        if (typeof num !== "number") {
+          console.log("引数が不正なデータ型のため、関数の処理を終了します");
+          return;
+        }
+        return num * 2;
+      };
+      const returnVal2 = double(10);
+      const returnVal3 = double("100");
+
+      console.log(returnVal1);
+      console.log(returnVal2);
+      console.log(returnVal3);
+    </script>
+  </body>
+</html>

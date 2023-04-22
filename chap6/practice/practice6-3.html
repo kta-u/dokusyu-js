@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>練習問題 6.3</title>
+  </head>
+  <body>
+    <script>
+      // [1]
+      function hello1() {
+        return "Hello World";
+      }
+      console.log(hello1());
+
+      // [2]
+      function hello2(personName) {
+        if (typeof personName === "string") {
+          console.log(`こんにちは、${personName}`);
+        } else {
+          console.log("引数に文字列を渡してください");
+        }
+      }
+      hello2("太郎");
+      hello2();
+
+      // [3]
+      function fn1() {
+        const val = 1 + 1;
+        console.log(val);
+      }
+      console.log(fn1());
+
+      function fn2() {
+        console.log(7 % 3);
+        return;
+      }
+      console.log(fn2());
+    </script>
+  </body>
+</html>
