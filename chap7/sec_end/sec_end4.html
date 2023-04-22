@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>クロージャを、アロー関数を使って簡略化</title>
+  </head>
+  <body>
+    <script>
+      const delayMessageFactory = (fn, ms) => (greeting) =>
+        setTimeout(() => fn(greeting), ms);
+
+      const dialog = delayMessageFactory(alert, 2000);
+      dialog("こんにちは");
+
+      const log = delayMessageFactory(console.log, 1000);
+      log("こんばんは");
+    </script>
+  </body>
+</html>
