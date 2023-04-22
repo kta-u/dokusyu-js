@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      レキシカルスコープの変数の値を使用している関数が戻り値になる場合
+    </title>
+  </head>
+  <body>
+    <script>
+      function Factory(greeting) {
+        function innerFn(name) {
+          console.log(greeting + " " + name);
+        }
+        return innerFn;
+      }
+
+      const hello = Factory("こんにちは");
+      hello("太郎");
+    </script>
+  </body>
+</html>
