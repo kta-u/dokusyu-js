@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>コールバック関数によって表示されるメッセージを切り替え</title>
+  </head>
+  <body>
+    <script>
+      function saySomething(callback) {
+        const result = callback();
+        console.log(`${result}、太郎`);
+      }
+
+      function hello() {
+        return "こんにちは";
+      }
+      saySomething(hello);
+
+      function bye() {
+        return "さようなら";
+      }
+      saySomething(bye);
+    </script>
+  </body>
+</html>

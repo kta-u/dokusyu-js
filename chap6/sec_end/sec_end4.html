@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>コールバック関数</title>
+  </head>
+  <body>
+    <script>
+      // setTimeoutの利用
+      setTimeout(
+        function (name) {
+          console.log("こんにちは、" + name);
+        },
+        2000,
+        "太郎"
+      );
+
+      // アロー関数への書き換え
+      setTimeout((name) => console.log("こんにちは、" + name), 2000, "太郎");
+
+      // コールバック関数の複数利用
+      function calcAndDisp(callback1, callback2, val1, val2) {
+        callback2(callback1(val1, val2));
+      }
+
+      function add(val1, val2) {
+        return val1 + val2;
+      }
+
+      function minus(val1, val2) {
+        return val1 - val2;
+      }
+
+      calcAndDisp(add, console.log, 3, 2);
+      calcAndDisp(minus, alert, 3, 2);
+    </script>
+  </body>
+</html>

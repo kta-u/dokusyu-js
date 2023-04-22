@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>関数にプロパティやメソッドを追加</title>
+  </head>
+  <body>
+    <script>
+      function fn() {}
+      fn.fullName = "Yamada Taro";
+      fn.hello = function () {
+        console.log("Hello, Yamada Taro.");
+      };
+
+      console.log(fn.fullName);
+      fn.hello();
+    </script>
+  </body>
+</html>
